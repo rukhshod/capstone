@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI in Uzbekistan: Retail & Logistics</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    :focus { outline-color:#2563eb; outline-offset:2px; }
+    .tab-active { border-bottom-color:#2563eb; color:#2563eb; }
+    .tab-inactive { border-bottom-color:transparent; color:#6b7280; }
+    .spinner { border:4px solid rgba(255,255,255,.3); border-radius:50%; border-top:4px solid #fff; width:24px; height:24px; animation:spin 1s linear infinite; }
+    .spinner-dark { border-color:rgba(0,0,0,.1); border-top-color:#2563eb; }
+    @keyframes spin { 0%{transform:rotate(0)} 100%{transform:rotate(360deg)} }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header & Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-600">AI<span class="text-gray-700">Studio</span></div>
+      <div class="hidden md:flex space-x-6">
+        <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+        <a href="#opportunity" class="text-gray-600 hover:text-blue-600 transition-colors">Opportunity</a>
+        <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors">Benefits</a>
+        <a href="#applications" class="text-gray-600 hover:text-blue-600 transition-colors">Applications</a>
+        <a href="#challenges" class="text-gray-600 hover:text-blue-600 transition-colors">Challenges</a>
+        <a href="#simulator" class="text-gray-600 hover:text-blue-600 transition-colors">AI Simulator</a>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+        </svg>
+      </button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute top-16 left-0 w-full z-40">
+      <a href="#home" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="#opportunity" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Opportunity</a>
+      <a href="#benefits" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Benefits</a>
+      <a href="#applications" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Applications</a>
+      <a href="#challenges" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">Challenges</a>
+      <a href="#simulator" class="block px-6 py-3 text-gray-700 hover:bg-gray-100">AI Simulator</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="bg-white pt-20 pb-20 md:pt-32 md:pb-24">
+      <div class="container mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div class="text-center md:text-left">
+          <span class="text-blue-600 font-semibold uppercase tracking-wide">Retail & Logistics Revolution</span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 mt-2 mb-6 leading-tight">
+            The Future of Commerce in Uzbekistan
+          </h1>
+          <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+            Discover how Artificial Intelligence is transforming Uzbekistan's retail and logistics sectors, driving efficiency, optimizing supply chains, and creating personalized experiences.
+          </p>
+          <a href="#applications" class="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:-translate-y-0.5">
+            See AI in Action
+          </a>
+        </div>
+        <div class="hidden md:block">
+          <img src="https://placehold.co/600x400/e0f2fe/0ea5e9?text=AI+Supply+Chain+Graphic&font=inter" alt="Illustration of an AI-powered supply chain" class="rounded-lg shadow-xl"/>
+        </div>
+      </div>
+    </section>
+
+    <!-- Opportunity -->
+    <section id="opportunity" class="py-20 bg-blue-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">The Opportunity: Why Now?</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            Uzbekistan is at a digital crossroads, combining strong government strategy with rapid technological adoption.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-blue-600 mb-4">
+              <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Strategic Vision</h3>
+            <p class="text-gray-600">
+              The "Digital Uzbekistan 2030" strategy actively promotes the development and integration of AI technologies across the economy.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-blue-600 mb-4">
+              <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Rapid E-Commerce Growth</h3>
+            <p class="text-gray-600">
+              A booming e-commerce market, led by unicorns like Uzum, creates massive demand for AI-driven logistics and personalization.
+            </p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-blue-600 mb-4">
+              <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">High Connectivity</h3>
+            <p class="text-gray-600">
+              With over 89% internet penetration and a mobile-first population, the digital infrastructure is ready for AI-powered services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Real-World Benefits</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">AI is already delivering measurable results in Uzbekistan.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Smarter Customs</h3>
+            <p class="text-gray-600">AI-powered risk analysis and X-ray scanning at customs checkpoints are speeding up freight movement and improving national logistics.</p>
+          </div>
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Logistics Efficiency</h3>
+            <p class="text-gray-600">Companies like UzAuto Motors have used AI to automate spare parts delivery, reducing logistics time by 18%.</p>
+          </div>
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Better Customer Service</h3>
+            <p class="text-gray-600">AI chatbots provide 24/7 support, answering customer questions instantly and freeing up human agents for complex issues.</p>
+          </div>
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Reduced Waste</h3>
+            <p class="text-gray-600">Accurate demand forecasting for retail and e-commerce helps prevent overstocking, reducing waste and improving profitability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Applications -->
+    <section id="applications" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Key AI Applications</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">Explore how AI is being applied in both retail and logistics.</p>
+        </div>
+
+        <div class="flex justify-center border-b border-gray-300 mb-8">
+          <button class="tab-btn tab-active py-4 px-6 text-lg font-semibold border-b-2" data-tab="retail">For Retail</button>
+          <button class="tab-btn tab-inactive py-4 px-6 text-lg font-semibold border-b-2" data-tab="logistics">For Logistics</button>
+        </div>
+
+        <div>
+          <div id="retail" class="tab-panel grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Personalized Recommendations</h3>
+              <p class="text-gray-600">Analyzing browsing and purchase history to show customers the products they are most likely to buy.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Dynamic Pricing</h3>
+              <p class="text-gray-600">Automatically adjusting prices based on demand, competitor pricing, and time of day to maximize revenue.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Intelligent Demand Forecasting</h3>
+              <p class="text-gray-600">Using machine learning to predict product demand, optimizing inventory and preventing stockouts.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">AI-Powered Chatbots</h3>
+              <p class="text-gray-600">Providing instant, 24/7 customer support, handling queries, and guiding users through their purchase.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Anti-Fraud Systems</h3>
+              <p class="text-gray-600">Identifying and flagging suspicious transactions in real-time, protecting both customers and businesses.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Cashier-less Checkout</h3>
+              <p class="text-gray-600">Using computer vision to allow customers to "just walk out," creating a frictionless in-store experience.</p>
+            </div>
+          </div>
+
+          <div id="logistics" class="tab-panel hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Optimized Route Planning</h3>
+              <p class="text-gray-600">Calculating the most efficient delivery routes in real-time, considering traffic, weather, and fuel costs.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Warehouse Automation</h3>
+              <p class="text-gray-600">Using AI-guided robots for sorting, picking, and packing goods, increasing warehouse throughput 24/7.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Predictive Maintenance</h3>
+              <p class="text-gray-600">Analyzing sensor data from delivery trucks and fleets to predict mechanical failures <em>before</em> they happen.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Customs Risk Analysis</h3>
+              <p class="text-gray-600">AI models assess import/export documents and data to automatically flag high-risk shipments for inspection.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">Automated Supply Chain</h3>
+              <p class="text-gray-600">Connecting suppliers, factories, and warehouses with AI to automatically manage inventory and re-order stock.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-sm">
+              <h3 class="text-xl font-semibold text-blue-700 mb-2">X-Ray Scan Analysis</h3>
+              <p class="text-gray-600">Using computer vision to help customs officers analyze X-ray images of cargo, identifying contraband or mis-declared goods.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Challenges -->
+    <section id="challenges" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Challenges on the Road Ahead</h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+            While the opportunity is immense, realistic challenges must be addressed for widespread adoption.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Data & Language Models</h3>
+            <p class="text-gray-600">A significant need exists for high-quality, large-scale datasets and AI models trained specifically for the Uzbek language and local context.</p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Infrastructure Investment</h3>
+            <p class="text-gray-600">Running advanced AI requires more investment in energy-efficient data centers and high-speed digital infrastructure.</p>
+          </div>
+          <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Digital Literacy & Skills</h3>
+            <p class="text-gray-600">Upskilling the workforce and helping small and medium-sized businesses (SMEs) understand and implement AI solutions is crucial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Strategy Simulator -->
+    <section id="simulator" class="py-20 bg-blue-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">✨ Find out how AI Studio can grow your business</h2>
+        </div>
+
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input
+              type="text" id="business-input"
+              placeholder="E.g., 'Local cafe', 'Textile exporter', 'Online shop'"
+              class="flex-grow px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+            <button
+              id="generate-ideas-btn"
+              class="flex justify-center items-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700 transition-colors disabled:opacity-50"
+            >
+              <span id="btn-text">Find Out</span>
+              <div id="btn-spinner" class="spinner hidden"></div>
+            </button>
+          </div>
+
+          <div id="ideas-output" class="mt-8 space-y-4"></div>
+          <div id="error-message" class="mt-4 text-red-600 hidden"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2025 AI Studio. All rights reserved.</p>
+      <p class="text-sm mt-2">A conceptual web app demonstrating the potential of AI in Uzbekistan's economy.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Mobile menu
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+      mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+    }
+
+    // Tabs
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels  = document.querySelectorAll('.tab-panel');
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-tab');
+        tabButtons.forEach(b => { b.classList.remove('tab-active'); b.classList.add('tab-inactive'); });
+        btn.classList.add('tab-active'); btn.classList.remove('tab-inactive');
+        tabPanels.forEach(p => p.classList.toggle('hidden', p.id !== id));
+      });
+    });
+
+    // --- Gemini wiring ---
+    const generateBtn   = document.getElementById('generate-ideas-btn');
+    const btnText       = document.getElementById('btn-text');
+    const btnSpinner    = document.getElementById('btn-spinner');
+    const businessInput = document.getElementById('business-input');
+    const ideasOutput   = document.getElementById('ideas-output');
+    const errorMessage  = document.getElementById('error-message');
+
+    const systemPrompt = `You are an expert consultant specializing in practical AI for retail and logistics in Uzbekistan. You provide simple, actionable advice for small and medium-sized businesses.
+
+The user will provide their business type. You must generate 3 concise, scannable ideas for how they could use AI.
+
+For each idea, provide a 'title' (a few words) and a 'description' (1-2 sentences).
+Respond ONLY with a valid JSON array in this format:
+[
+  { "title": "AI Idea Title 1", "description": "Short description of the idea." },
+  { "title": "AI Idea Title 2", "description": "Short description of the idea." },
+  { "title": "AI Idea Title 3", "description": "Short description of the idea." }
+]`;
+
+    const responseSchema = {
+      type: "ARRAY",
+      items: {
+        type: "OBJECT",
+        properties: {
+          title:       { type: "STRING" },
+          description: { type: "STRING" }
+        },
+        required: ["title", "description"]
+      }
+    };
+
+    generateBtn.addEventListener('click', () => {
+      const businessType = businessInput.value.trim();
+      if (!businessType) return displayError("Please enter a business type.");
+      callGeminiAPI(businessType);
+    });
+
+    businessInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') generateBtn.click();
+    });
+
+    function displayResults(ideas) {
+      ideasOutput.innerHTML = '';
+      errorMessage.classList.add('hidden');
+      ideas.forEach(idea => {
+        const card = document.createElement('div');
+        card.className = 'bg-gray-50 border border-gray-200 p-4 rounded-lg';
+        card.innerHTML = `
+          <h4 class="font-semibold text-lg text-blue-700">${escapeHtml(idea.title)}</h4>
+          <p class="text-gray-700">${escapeHtml(idea.description)}</p>
+        `;
+        ideasOutput.appendChild(card);
+      });
+    }
+
+    function displayError(msg) {
+      ideasOutput.innerHTML = '';
+      errorMessage.textContent = "Error: " + msg;
+      errorMessage.classList.remove('hidden');
+    }
+
+    function setLoading(isLoading) {
+      if (isLoading) {
+        btnText.classList.add('hidden');
+        btnSpinner.classList.remove('hidden');
+        generateBtn.disabled = true;
+        businessInput.disabled = true;
+      } else {
+        btnText.classList.remove('hidden');
+        btnSpinner.classList.add('hidden');
+        generateBtn.disabled = false;
+        businessInput.disabled = false;
+        businessInput.focus();
+      }
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    async function callGeminiAPI(userQuery) {
+      setLoading(true);
+
+      // <-- paste YOUR real AI Studio API key here (you asked to ignore security)
+      const apiKey = "AIzaSyC4mVg3nMFjYGCPp1CEi9FqncebQk_fHdU";
+
+      if (!apiKey) { displayError("API Key not set."); setLoading(false); return; }
+
+      // Try v1 first, then v1beta
+      const versions = ["v1", "v1beta"];
+
+      // Preferred models by quality; we’ll intersect with what your key actually exposes
+      const preferred = [
+        "gemini-2.0-flash", "gemini-2.0-flash-exp",
+        "gemini-1.5-flash-latest", "gemini-1.5-flash",
+        "gemini-1.5-flash-8b",
+        "gemini-1.0-pro"
+      ];
+
+      try {
+        // 1) Discover models available to your key
+        const discovered = await listModels(apiKey, versions);
+        if (!discovered || discovered.length === 0) throw new Error("No models visible to this API key.");
+
+        // 2) Filter to those that support generateContent
+        const genCapable = discovered.filter(m =>
+          Array.isArray(m.supportedGenerationMethods) &&
+          m.supportedGenerationMethods.includes("generateContent")
+        );
+
+        if (genCapable.length === 0) throw new Error("No models supporting generateContent for this key.");
+
+        // 3) Pick first match by our preference list; otherwise fallback to first generate-capable
+        let model = genCapable.find(m => preferred.includes(m.name.replace("models/", "")));
+        model = model ? model.name : genCapable[0].name; // full name like "models/gemini-1.5-flash-8b"
+
+        // 4) Call generateContent with the chosen model
+        const result = await generateWithModel(apiKey, versions, model, {
+          systemInstruction: {
+            role: "system",
+            parts: [{ text: systemPrompt }]
+          },
+          contents: [{
+            role: "user",
+            parts: [{ text: userQuery }]
+          }],
+          generationConfig: {
+            responseMimeType: "application/json",
+            responseSchema: responseSchema,
+            temperature: 0.7
+          }
+        });
+
+        // Parse + render
+        const candidate = result?.candidates?.[0];
+        const raw = candidate?.content?.parts?.[0]?.text ?? "";
+        const clean = raw.trim()
+          .replace(/^```json\s*/i, '')
+          .replace(/^```\s*/i, '')
+          .replace(/```$/i, '');
+
+        const parsed = JSON.parse(clean);
+        if (!Array.isArray(parsed)) throw new Error("Expected a JSON array.");
+        displayResults(parsed);
+      } catch (e) {
+        displayError(e.message || "Failed calling Gemini.");
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    async function listModels(apiKey, versions) {
+      let lastErr;
+      for (const ver of versions) {
+        const url = `https://generativelanguage.googleapis.com/${ver}/models?key=${apiKey}`;
+        try {
+          const res = await fetch(url);
+          if (!res.ok) {
+            const body = await safeReadBody(res);
+            if (res.status === 404) { lastErr = `(${ver}) ${body}`; continue; }
+            throw new Error(`ListModels error (${ver}): ${body}`);
+          }
+          const data = await res.json();
+          // models[].name is like "models/gemini-1.5-flash-8b"
+          return data.models || [];
+        } catch (e) {
+          lastErr = e.message;
+        }
+      }
+      throw new Error(lastErr || "Unable to list models.");
+    }
+
+    async function generateWithModel(apiKey, versions, fullModelName, payload) {
+      let lastErr;
+      for (const ver of versions) {
+        const url = `https://generativelanguage.googleapis.com/${ver}/${fullModelName}:generateContent?key=${apiKey}`;
+        try {
+          const res = await fetch(url, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload)
+          });
+          if (!res.ok) {
+            const body = await safeReadBody(res);
+            if (res.status === 404) { lastErr = `(${ver}) ${body}`; continue; }
+            throw new Error(`API Error (${ver} ${res.status}): ${body}`);
+          }
+          return await res.json();
+        } catch (e) {
+          lastErr = e.message;
+        }
+      }
+      throw new Error(lastErr || "All attempts to generate failed.");
+    }
+
+    async function safeReadBody(res) {
+      try {
+        const j = await res.json();
+        return j?.error?.message || JSON.stringify(j);
+      } catch {
+        return await res.text();
+      }
+    }
+  });
+</script>
+
+
+</body>
+</html>
